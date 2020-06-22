@@ -15,7 +15,8 @@ public class Controller {
 
 
     @GetMapping("/test")
-    public void testTracker(){
-        businessService.print();
+    public String  testTracker(){
+        String name=businessService.print("manoj");
+        return name;
     }
 }
